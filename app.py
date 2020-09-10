@@ -13,6 +13,12 @@ from sklearn.svm import SVC
 
 
 def main():
+    hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        </style>
+        """
+    st.markdown(hide_menu_style, unsafe_allow_html=True)
     st.title("Binary Classification App")
     st.sidebar.title("Binary Classification App")
     st.markdown("Are Your Mushrooms edible or poisonous? 🍄")
